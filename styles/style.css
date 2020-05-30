@@ -58,7 +58,8 @@ body {
 .promo__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  flex-basis: 100%;
 }
 .promo__title {
   font-weight: 500;
@@ -69,6 +70,7 @@ body {
 .promo__img {
   width: 100%;
   margin-top: 20px;
+  flex-basis: 100%;
 }
 
 .txt {
@@ -90,8 +92,37 @@ body {
   box-shadow: 0 15px 20px rgba(245, 56, 56, 0.35);
 }
 
+.title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+
+.list {
+  list-style: none;
+}
+.list__item {
+  position: relative;
+}
+.list__txt {
+  margin-left: 32px;
+}
+.list__item::before {
+  content: ".";
+  width: 20px;
+  height: 20px;
+  background: url(../design/icon-marker.svg) no-repeat;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 @media screen and (min-width: 700px) {
   .promo {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
