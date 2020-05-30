@@ -1,0 +1,59 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #F53855;
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53855;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__btn {
+  text-align: center;
+}
+
+.sign {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0B132A;
+  margin: 0 30px;
+}
+
+.btn p {
+  margin: 13px;
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    justify-content: space-between;
+    margin: 45px 0;
+    flex-direction: row;
+  }
+  .header p {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
