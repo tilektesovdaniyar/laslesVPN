@@ -1,0 +1,52 @@
+.main   {
+    text-align: center;
+}
+.grid   {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    gap: 10px;
+    margin: 80px 0;
+    &__txt  {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #0B132A;
+        margin: 30px 0;
+    }
+    .list__item::before {
+        background: url(../design/icon-marker-grid.svg) no-repeat;
+    }
+    .list__txt  {
+        margin-left: 0;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.price  {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0B132A;
+    span {
+        color: #4F5665;
+    }
+}
+@media screen and (min-width: 400px)    {
+    .grid   {
+        grid-template-columns: repeat(1, 330px);
+    }
+}
+@media screen and (min-width: 800px)    {
+    .grid   {
+        grid-template-columns: repeat(2, 330px);
+    }
+}
+@media screen and (min-width: 1200px)    {
+    .grid   {
+        grid-template-columns: repeat(3, 330px);
+        gap: 50px;
+    }
+}
