@@ -6,11 +6,11 @@ body {
 .btn {
   display: inline-block;
   text-decoration: none;
+  padding: 12px 0;
   border: 1px solid #F53855;
   box-sizing: border-box;
   border-radius: 50px;
   width: 150px;
-  height: 45px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -41,10 +41,6 @@ body {
   margin: 0 30px;
 }
 
-.btn p {
-  margin: 13px;
-}
-
 @media screen and (min-width: 500px) {
   .header {
     justify-content: space-between;
@@ -53,6 +49,50 @@ body {
   }
   .header p {
     display: inline-block;
+  }
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+}
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+}
+.promo__img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.txt {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.btn--big {
+  width: 250px;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.btn--big:hover {
+  background: #F53838;
+  color: white;
+  box-shadow: 0 15px 20px rgba(245, 56, 56, 0.35);
+}
+
+@media screen and (min-width: 700px) {
+  .promo {
+    justify-content: space-between;
   }
 }
 

@@ -5,11 +5,11 @@ body    {
 %btn    {
     display: inline-block;
     text-decoration: none;
+    padding: 12px 0;
     border: 1px solid #F53855;
     box-sizing: border-box;
     border-radius: 50px;
     width: 150px;
-    height: 45px;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -40,7 +40,7 @@ body    {
 .btn  {
     @extend %btn;
     p   {
-        margin: 13px;
+        // margin: 13px;
     }
 }  
 @media screen and (min-width: 500px) {

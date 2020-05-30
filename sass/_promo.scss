@@ -1,0 +1,40 @@
+.promo  {
+    display: flex;
+    flex-direction: column;
+    &__content  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title    {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+        color: #0B132A;
+    }
+    &__img  {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.txt    {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+.btn--big   {
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.btn--big:hover {
+    background: #F53838;
+    color: white;
+    box-shadow: 0 15px 20px rgba(245, 56, 56, 0.35);
+}
+@media screen and (min-width: 700px)    {
+    .promo  {
+        justify-content: space-between;
+    }
+}
