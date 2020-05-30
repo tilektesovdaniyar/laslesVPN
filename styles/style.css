@@ -1,6 +1,7 @@
 body {
   font-family: "Rubik", sans-serif;
   margin: 0;
+  position: relative;
 }
 
 .btn {
@@ -132,6 +133,11 @@ body {
     justify-content: space-between;
   }
 }
+.grid--bg {
+  background: rgba(248, 248, 248, 0.4);
+  padding: 80px;
+}
+
 .main {
   text-align: center;
 }
@@ -156,6 +162,9 @@ body {
   margin-left: 0;
 }
 .grid__item {
+  background: white;
+  box-sizing: border-box;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,6 +207,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 300px;
 }
 .sponsor .icons {
   display: flex;
@@ -205,6 +215,7 @@ body {
 }
 
 .footer {
+  padding-top: 86px;
   background: #F8F8F8;
 }
 .footer__txt {
@@ -222,6 +233,23 @@ body {
     display: flex;
     justify-content: space-between;
   }
+}
+.subscribe {
+  min-width: 1140px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 400px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 70px;
+}
+.subscribe__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
