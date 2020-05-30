@@ -1,0 +1,18 @@
+.footer {
+    background: #F8F8F8;
+    &__txt  {
+        color: #AFB5C0;
+    }
+}
+.txt--tdn   {
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 660px)    {
+    .basement   {
+        display: flex;
+        justify-content: space-between;
+    }
+}
