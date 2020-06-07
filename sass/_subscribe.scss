@@ -1,17 +1,25 @@
+.position    {
+    position: relative;
+}
 .subscribe {
-    min-width: 1140px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 400px;
+    bottom: -150px;
     left: 50%;
     transform: translate(-50%, 0);
     background: #fff;
-    display: flex;
-    justify-content: space-between;
+    
     padding: 60px 70px;
     &__btn {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (min-width: 1140px)    {
+    .subscribe  {
+        display: flex;
+        justify-content: space-between;
+        min-width: 1140px;
     }
 }

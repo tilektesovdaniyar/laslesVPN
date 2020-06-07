@@ -1,6 +1,5 @@
 .grid--bg   {
     background: rgb(248, 248, 248, 0.4);
-    padding: 80px;
 }
 .main   {
     text-align: center;
@@ -42,17 +41,25 @@
     }
 }
 @media screen and (min-width: 400px)    {
+    .grid--bg   {
+        padding: 80px;
+
+    }
     .grid   {
+        // margin-left: 100px;
         grid-template-columns: repeat(1, 330px);
     }
 }
 @media screen and (min-width: 800px)    {
+    
     .grid   {
         grid-template-columns: repeat(2, 330px);
     }
 }
 @media screen and (min-width: 1200px)    {
+    
     .grid   {
+        margin-left: 0;
         grid-template-columns: repeat(3, 330px);
         gap: 50px;
     }
